@@ -1,0 +1,235 @@
+/* Gen, Body, p, a */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+body{
+    background: #ededed;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+/* header & footer */
+header, footer{
+    width: 100%;
+    padding: 20px 0px;
+    background:url("cover.jpg") black;
+    box-shadow: 0px 0px 15px #333333;
+}
+header{
+    border-bottom: 2px solid #ffffff;
+    height: 120px;
+}
+header h1{
+    color: white;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+footer{
+    border-top: 2px solid #ffffff;
+    background-image:  url(cover.jpg) black;
+}
+footer p{
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+footer a{
+    color: white;
+}
+/*Section*/
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbbbbb;
+}
+section h2{
+    margin: 20px 0;
+    width: 90%;
+}
+section > div{
+    width: 90%;
+}
+.photo{
+    text-align: center;
+}
+.photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 0px 10px #777777;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+.pres{
+    border-bottom: 2px dashed #cccccc;
+}
+.pres a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #ffffff;
+    background-color: #eeaa00;
+    box-shadow: 0px 0px 10px #cccccc;
+    border-radius: 5px;
+}
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact p:first-child{
+    flex: 0 0 40%;
+}
+.contact p:last-child{
+    flex: 0 0 60%
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+}
+.
+.social img{
+    width: 40px;
+    height: 40px;
+}
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbbbbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+}
+.exp-logo{
+    flex: 0 0 25%;
+    max-width: 100px;
+}
+.exp-info{
+    flex: 0 0 70%;
+    margin-bottom: auto;
+}
+.exp img{
+    width: 100%;
+}
+.exp h3{
+    font-size: 1.2em;
+}
+.exp h4{
+    font-size: 1em;
+    font-weight: normal;
+}
+.comp{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.comp p{
+    flex: 0 0 40%;
+}
+/* progress bar*/
+.comp-barre{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: gray;
+    border-bottom: 1px ridge gray;
+}
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.c75{
+    width: 75%;
+    background-color: green;
+}
+.c00{
+    width: 0%;
+    background-color: green;
+}
+.c50{
+    width: 50%;
+    background-color: green;
+}
+.c100{
+    width: 100%;
+    background-color: green;
+}
+.hobby{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.hobby img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555555;
+}
+/* Adjust Desktop*/
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbbbbb;
+    }
+    a:hover{
+        color: #eeaa00;
+    }
+    header h1{
+        width: 80%;
+    }
+    .pres, .contact{
+        flex: 0 0 45%;
+    }
+    .pres{
+        border-bottom: none;
+        border-right: 2px solid #cccccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    .pres a{
+        border: 2px solid transparent;
+    }
+    .pres a:hover{
+        color: orange;
+        background-color: #ffffff;
+        border: 2px solid orange;
+        box-shadow: 0px 0px 20px #666666;
+    }
+    .exp-logo{
+        flex: 0 0 10%;
+    }
+    .exp-info, .exp-desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+    .hobby{
+        flex: 0 1 25%;
+    }
+}
