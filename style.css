@@ -21,7 +21,7 @@ a{
 header, footer{
     width: 100%;
     padding: 20px 0px;
-    background:url("cover.jpg") black;
+    background:url("image/cover.jpg") black;
     box-shadow: 0px 0px 15px #333333;
 }
 header{
@@ -36,7 +36,7 @@ header h1{
 }
 footer{
     border-top: 2px solid #ffffff;
-    background-image:  url(cover.jpg) black;
+    background-image:  url(image/cover.jpg) black;
 }
 footer p{
     width: 90%;
@@ -68,7 +68,7 @@ section > div{
     text-align: center;
 }
 .photo img{
-    width: 150px;
+    width: 200px;
     height: 200px;
     border: 3px solid #ffffff;
     box-shadow: 0px 0px 10px #777777;
